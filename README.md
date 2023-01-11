@@ -12,3 +12,9 @@
 ```
 python3.10 -m venv VirtualEnvironment
 ```
+
+## **Install the required libraries**
+
+```
+pip install -r requirements.txt
+```
