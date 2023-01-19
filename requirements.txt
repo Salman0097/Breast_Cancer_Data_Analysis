@@ -1,7 +1,7 @@
 pandas
 numpy
+flask
 matplotlib
 sklearn
 seaborn
-flask
 gunicorn
