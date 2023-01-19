@@ -3,6 +3,5 @@ numpy
 matplotlib
 sklearn
 seaborn
-streamlit
 flask
 gunicorn

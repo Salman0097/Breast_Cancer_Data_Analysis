@@ -28,7 +28,13 @@ def predict():
     final_input=piping.transform(np.array(data).reshape(1,-1))
     print(final_input)
     output=svm_model_pkl.predict(final_input)[0]
-    return render_template("home.html",prediction_text="The breast cancer prediction is {}".format(output))
+    op_txt =''
+    if output == 1:       
+        op_txt.append('Sorry.You have Breast cancer')
+    else:
+        op_txt.append('Hurray!You are awesome and good to go')
+    
+    return render_template("home.html",prediction_text= op_txt )
 
 
 if __name__=="__main__":
