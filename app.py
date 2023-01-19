@@ -1,5 +1,5 @@
 import pickle
-from flask import Flask, request, app, jsonify,url_for, render_template
+from flask import Flask, request, app, jsonify, url_for, render_template
 import pandas as pd
 import numpy as np
 
@@ -28,7 +28,7 @@ def predict():
     final_input=piping.transform(np.array(data).reshape(1,-1))
     print(final_input)
     output=svm_model_pkl.predict(final_input)[0]
-    return render_template("home.html",prediction_text="The House price prediction is {}".format(output))
+    return render_template("home.html",prediction_text="The breast cancer prediction is {}".format(output))
 
 
 if __name__=="__main__":
